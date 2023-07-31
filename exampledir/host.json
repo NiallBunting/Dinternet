@@ -1,0 +1,5 @@
+{
+  "name": "hostname",
+  "publickey": "test",
+  "staticlocation": ["somes3bucket"]
+}
