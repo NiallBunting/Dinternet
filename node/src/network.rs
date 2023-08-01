@@ -3,9 +3,14 @@ use libp2p::swarm::{keep_alive, NetworkBehaviour, SwarmEvent, SwarmBuilder};
 use libp2p::{identity, ping, Multiaddr, PeerId};
 use std::error::Error;
 
+
+pub fn generate_keypair() -> identity::Keypair {
+    identity::Keypair::generate_ed25519()
+}
+
 //#[async_std::main]
 pub async fn start() -> Result<(), Box<dyn Error>> {
-    let local_key = identity::Keypair::generate_ed25519();
+    let local_key = generate_keypair();
     let local_peer_id = PeerId::from(local_key.public());
     println!("Local peer id: {local_peer_id:?}");
 
