@@ -12,6 +12,6 @@ clap = { version = "4.3.12", features = ["derive"] }
 either = "1.9"
 env_logger = "0.10"
 futures = "0.3.28"
-libp2p = { features = ["async-std", "cbor", "dns", "kad", "noise", "macros", "request-response", "tcp", "websocket", "yamux"] }
+libp2p = { features = ["async-std", "cbor", "dns", "kad", "noise", "macros", "request-response", "tcp", "websocket", "yamux", "ping"] }
 void = "1.0.2"
 home = "0.5.5"

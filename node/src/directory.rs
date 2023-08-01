@@ -5,7 +5,6 @@
 
 use std::fs;
 use std::path::Path;
-use std::path::PathBuf;
 use home::home_dir;
 
 // Try to create any missing files from the directory
