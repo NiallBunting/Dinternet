@@ -1,1 +1,36 @@
-Homepage
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Microblog Platform (Chirp)</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>A Microblog Platform (Chirp)</h1>
+
+    <div>
+        <div>
+            <textarea id="chirpTextArea" placeholder="Write your chirp"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit Chirp" id="createChirp"/>
+        </div>
+    </div>
+    
+    <div id="chirps">
+        <div class="chirp">
+            <div>
+                You have no chirps!
+            </div>
+            <!--<div class="date">
+                2023-01-01
+            </div>-->
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
